@@ -17,6 +17,7 @@ const jobPositions = [
     timeline: "Jun 2021 — Present",
     currentPosition: "Senior Software Engineer",
     place: "QualityIT",
+    logo: "qualityit",
     previousPositions: [""],
     description:
       "Led development of a web-based peer-to-peer lending platform, implemented serverless solutions on AWS, and managed a team to improve system efficiency and cost-effectiveness.",
@@ -35,6 +36,7 @@ const jobPositions = [
     timeline: "Jun 2019 — Jun 2021",
     currentPosition: "Software Engineer",
     place: "Thoughtworks",
+    logo: "thoughtworks",
     previousPositions: [],
     description:
       "Enhanced application integrations for payments and social media, optimized web pages for search engines, and developed scalable multi-platform applications.",
@@ -52,6 +54,7 @@ const jobPositions = [
     timeline: "Nov 2015 - May 2019",
     currentPosition: "Unity Developer",
     place: "Playmind",
+    logo: "playmind",
     previousPositions: [""],
     description:
       "Developed and optimized a 3D psychological horror game, upgraded games to Unity 5, and improved both performance and graphics quality.",
@@ -70,6 +73,7 @@ const jobPositions = [
     timeline: "Sep 2012 - Nov 2015",
     currentPosition: "Web Developer",
     place: "Genatec",
+    logo: "genatec",
     previousPositions: [""],
     description:
       "Take part in the development of single-page applications, created adaptive web solutions for various business needs, including eCommerce and CRM platforms.",
@@ -104,7 +108,7 @@ export default function Experience() {
               <CardTitle className="text-base text-primary dark:text-slate-400 whitespace-nowrap">
                 {job.timeline}
                 <Avatar className="w-24 lg:w-36 h-auto my-3 border-0">
-                  <AvatarImage src={`./${job.place}.png`} />
+                  <AvatarImage src={`./${job.logo}.png`} />
                   <AvatarFallback className="w-24 h-24 lg:w-36 lg:h-36 rounded-full border-1 border-primary">
                     {job.place}
                   </AvatarFallback>
